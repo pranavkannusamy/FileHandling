@@ -48,66 +48,66 @@ public static void main(String[] args) throws IOException
     for(i=0;i<z;i++)
     {
     if(a.compareTo("wc")==0)
-    {
-      LineCount lc = new LineCount(FILE_PATH[i]);
-      WordCount wc = new WordCount(FILE_PATH[i]);
-   	CharCount cc = new CharCount(FILE_PATH[i]);
-   	Print pf = new Print(FILE_PATH[i]);
-      lc.run();
-      wc.run();
-      cc.run();
-      pf.run();
-    }
+     {
+        LineCount lc = new LineCount(FILE_PATH[i]);
+        WordCount wc = new WordCount(FILE_PATH[i]);
+   	    CharCount cc = new CharCount(FILE_PATH[i]);
+     	Print pf = new Print(FILE_PATH[i]);
+        lc.run();
+        wc.run();
+        cc.run();
+        pf.run();
+     }
     else if(a.compareTo("-m")==0) 
-    { 
-     CharCount cc = new CharCount(FILE_PATH[i]);
-     Print pf = new Print(FILE_PATH[i]);
-     cc.run();
-     pf.run();
-    } 
+     { 
+        CharCount cc = new CharCount(FILE_PATH[i]);
+        Print pf = new Print(FILE_PATH[i]);
+        cc.run();
+        pf.run();
+     } 
     else if(a.compareTo("-l")==0)
-    {
-     LineCount lc = new LineCount(FILE_PATH[i]);
-     Print pf = new Print(FILE_PATH[i]);
-     lc.run();
-     pf.run();
-    }
+     {
+       LineCount lc = new LineCount(FILE_PATH[i]);
+       Print pf = new Print(FILE_PATH[i]);
+       lc.run();
+       pf.run();
+     }
     else if(a.compareTo("-w")==0)
-    {
-     WordCount wc = new WordCount(FILE_PATH[i]);
-     Print pf = new Print(FILE_PATH[i]);
-     wc.run();
-     pf.run();
-    }
+     {
+       WordCount wc = new WordCount(FILE_PATH[i]);
+       Print pf = new Print(FILE_PATH[i]);
+       wc.run();
+       pf.run();
+     }
     else if(a.compareTo("-c")==0)
-    {
-     FileSize fz = new FileSize(FILE_PATH[i]);
-     Print pf = new Print(FILE_PATH[i]);
-     fz.run();
-     pf.run();
-    }
+     {
+       FileSize fz = new FileSize(FILE_PATH[i]);
+       Print pf = new Print(FILE_PATH[i]);
+       fz.run();
+       pf.run();
+     }
     else if(a.compareTo("-L")==0)
-    {
-     LongLine ll = new LongLine(FILE_PATH[i]);
-     Print pf = new Print(FILE_PATH[i]);
-     ll.run();
-     pf.run();
-    }
+     {
+       LongLine ll = new LongLine(FILE_PATH[i]);
+       Print pf = new Print(FILE_PATH[i]);
+       ll.run();
+       pf.run();
+     }
     else if(a.compareTo("--help")==0)
-    {
-     System.out.println("Enter '-w' to get Word the Count");
-     System.out.println("Enter '-m' to get Character Count");
-     System.out.println("Enter '-l' to get Line Count");
-     System.out.println("Enter '-L' to get the Length of the Longest Line");
-     System.out.println("Enter '-c' to get the Filesize");
-     break;
-    }
+     {
+       System.out.println("Enter '-w' to get Word the Count");
+       System.out.println("Enter '-m' to get Character Count");
+       System.out.println("Enter '-l' to get Line Count");
+       System.out.println("Enter '-L' to get the Length of the Longest Line");
+       System.out.println("Enter '-c' to get the Filesize");
+       break;
+     }
     else
-    {
-     System.out.println("Enter The Command Properly");
-    }
+     {
+       System.out.println("Enter The Command Properly");
+     }
     }
     z=0;
-    }while((a.compareTo("wc")!=0) || (a.compareTo("-m")!=0) || (a.compareTo("-l")!=0) || (a.compareTo("--help")!=0));
+    }while((a.compareTo("wc")!=0) || (a.compareTo("-m")!=0) || (a.compareTo("-l")!=0) || (a.compareTo("-L")!=0) || (a.compareTo("-c")!=0) || (a.compareTo("--help")!=0));
   }
 }
