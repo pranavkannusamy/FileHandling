@@ -108,6 +108,7 @@ public static void main(String[] args) throws IOException
      }
     }
     z=0;
-    }while((a.compareTo("wc")!=0) || (a.compareTo("-m")!=0) || (a.compareTo("-l")!=0) || (a.compareTo("-L")!=0) || (a.compareTo("-c")!=0) || (a.compareTo("--help")!=0));
+    }while((a.compareTo("wc")!=0) || (a.compareTo("-m")!=0) || (a.compareTo("-l")!=0) || (a.compareTo("-L")!=0) ||
+           (a.compareTo("-w")!=0) || (a.compareTo("-c")!=0) || (a.compareTo("--help")!=0));
   }
 }
